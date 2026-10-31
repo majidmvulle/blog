@@ -53,7 +53,7 @@ Then create a **Deploy hook** under **Settings → Builds** and store its URL in
 
 1. Push this repo to GitHub.
 2. In the Cloudflare dashboard, go to **Workers & Pages → Create → Pages → Connect to Git** and pick the repo.
-   Name the project `majidmvulle-blog`, which gives `https://majidmvulle-blog.pages.dev` (the `site` value in `astro.config.mjs`).
+   Pages adds a suffix when the name is taken (this one is `https://blog-2da.pages.dev`). Put the address it gives you in `site` in `astro.config.mjs`.
 3. Build settings: framework preset **Astro**, build command `npm run build`, output directory `dist`.
    The Node version comes from `.node-version`.
 4. Update `site` in `astro.config.mjs` to the final URL (the `*.pages.dev` address or a custom domain), so the sitemap and RSS links are correct.

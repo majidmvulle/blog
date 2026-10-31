@@ -7,7 +7,7 @@ import { defineConfig, fontProviders } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
 	// Placeholder: change this to your real Cloudflare Pages URL or custom domain.
-	site: 'https://majidmvulle-blog.pages.dev',
+	site: 'https://blog-2da.pages.dev',
 	integrations: [mdx(), sitemap()],
 	// Strapi cover images are remote (S3/R2). Astro downloads and optimizes them at build time.
 	image: {

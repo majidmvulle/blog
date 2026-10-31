@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+import { GITHUB_URL, REPO_URL } from '../consts';
+---
+
+<Layout
+	title="About"
+	description="About this blog and the homelab behind it."
+	pubDate={new Date('2026-10-31')}
+>
+	<p>
+		I'm Majid Mvulle, a software engineer who runs a Kubernetes homelab for fun and learning. This
+		blog documents the journey: hardware choices, GitOps patterns, networking, storage, backups,
+		and the mistakes along the way.
+	</p>
+	<p>
+		The cluster configuration lives in <a href={REPO_URL}>the public homelab repo</a>, and you can
+		find my other work on <a href={GITHUB_URL}>GitHub</a>.
+	</p>
+</Layout>
